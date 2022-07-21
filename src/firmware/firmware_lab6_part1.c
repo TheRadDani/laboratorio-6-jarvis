@@ -1,7 +1,7 @@
 #include <stdint.h>
 
 #define LED_REGISTERS_MEMORY_ADD 0x10000000
-#define IRQ_REGISTERS_MEMORY_ADD 0x10000008
+#define IRQ_REGISTERS_MEMORY_ADD 0x10000004
 #define LOOP_WAIT_LIMIT 100
 
 uint32_t global_counter = 0;
@@ -17,7 +17,7 @@ static void putuint2(uint32_t i) {
 
 uint32_t *irq(uint32_t *regs, uint32_t irqs) {
     global_counter += 1;
-    putuint(global_counter);
+    putuint2(global_counter);
     return regs;
 }
 
