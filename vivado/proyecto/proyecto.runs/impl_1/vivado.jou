@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jul 21 08:54:22 2022
+# Process ID: 22619
+# Current directory: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1
+# Command line: vivado -log system.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system.tcl -notrace
+# Log file: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/system.vdi
+# Journal file: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/vivado.jou
+# Running On: debian, OS: Linux, CPU Frequency: 3673.099 MHz, CPU Physical cores: 4, Host memory: 16660 MB
+#-----------------------------------------------------------
+source system.tcl -notrace

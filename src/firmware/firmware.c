@@ -1,1 +1,1 @@
-firmware_lab6_part1.c
+firmware_lab6_part2.c

@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 19 2021
+02:56:52
+/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v,1658412291,verilog,,/home/licit/laboratorio-6-jarvis/src/verilog/system.v,,picorv32;picorv32_axi;picorv32_axi_adapter;picorv32_pcpi_div;picorv32_pcpi_fast_mul;picorv32_pcpi_mul;picorv32_regs;picorv32_wb,,,,,,,,
+/home/licit/laboratorio-6-jarvis/src/verilog/system.v,1658415858,verilog,,/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v,,bcd_to_7seg;bin_to_one_hot;seven_segment_dec;seven_segment_hex;seven_segment_switch;system,,,,,,,,
+/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v,1658415585,verilog,,,,system_tb,,,,,,,,
+/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,

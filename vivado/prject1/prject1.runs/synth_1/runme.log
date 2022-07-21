@@ -1,0 +1,401 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top system -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off -verilog_define SINTESIS
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 64273
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2592.777 ; gain = 0.000 ; free physical = 668 ; free virtual = 21698
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:3]
+INFO: [Synth 8-3876] $readmem data file '../firmware/firmware.hex' is read successfully [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:91]
+INFO: [Synth 8-6157] synthesizing module 'picorv32' [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:57]
+	Parameter ENABLE_IRQ bound to: 1'b1 
+	Parameter ENABLE_IRQ_QREGS bound to: 1'b0 
+	Parameter LATCHED_IRQ bound to: 32'b00000000000000000000000000000000 
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1248]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1294]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1477]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-151] case item 1'b0 is unreachable [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1563]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_firstword_reg_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:376]
+WARNING: [Synth 8-6014] Unused sequential element last_mem_valid_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:377]
+WARNING: [Synth 8-6014] Unused sequential element next_insn_opcode_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:417]
+WARNING: [Synth 8-6014] Unused sequential element mem_la_secondword_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:555]
+WARNING: [Synth 8-6014] Unused sequential element prefetched_high_word_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:556]
+WARNING: [Synth 8-6014] Unused sequential element q_ascii_instr_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:761]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_imm_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:762]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_opcode_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:763]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs1_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:764]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rs2_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:765]
+WARNING: [Synth 8-6014] Unused sequential element q_insn_rd_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:766]
+WARNING: [Synth 8-6014] Unused sequential element dbg_next_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:767]
+WARNING: [Synth 8-6014] Unused sequential element dbg_valid_insn_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:770]
+WARNING: [Synth 8-6014] Unused sequential element cached_ascii_instr_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:775]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_imm_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:776]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_opcode_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:778]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs1_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:781]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rs2_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:782]
+WARNING: [Synth 8-6014] Unused sequential element cached_insn_rd_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:783]
+WARNING: [Synth 8-6014] Unused sequential element dbg_insn_addr_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:787]
+WARNING: [Synth 8-6014] Unused sequential element clear_prefetched_high_word_q_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1272]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rinst_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1379]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_rdata_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1380]
+WARNING: [Synth 8-6014] Unused sequential element set_mem_do_wdata_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1381]
+WARNING: [Synth 8-6014] Unused sequential element alu_out_0_q_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1383]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1386]
+WARNING: [Synth 8-6014] Unused sequential element alu_wait_2_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1387]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1390]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1391]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs1val_valid_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1392]
+WARNING: [Synth 8-6014] Unused sequential element dbg_rs2val_valid_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1393]
+WARNING: [Synth 8-6014] Unused sequential element next_irq_pending_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1413]
+WARNING: [Synth 8-6014] Unused sequential element decoder_trigger_q_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1426]
+WARNING: [Synth 8-6014] Unused sequential element decoder_pseudo_trigger_q_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1428]
+WARNING: [Synth 8-6014] Unused sequential element latched_trace_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1444]
+WARNING: [Synth 8-6014] Unused sequential element current_pc_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1474]
+WARNING: [Synth 8-6014] Unused sequential element instr_ecall_ebreak_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1068]
+WARNING: [Synth 8-6014] Unused sequential element pcpi_timeout_reg was removed.  [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:1449]
+INFO: [Synth 8-6155] done synthesizing module 'picorv32' (1#1) [/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v:57]
+WARNING: [Synth 8-7071] port 'pcpi_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_insn' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_rs1' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_rs2' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_wr' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_rd' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_wait' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'pcpi_ready' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'eoi' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'trace_valid' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7071] port 'trace_data' of module 'picorv32' is unconnected for instance 'picorv32_core' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+WARNING: [Synth 8-7023] instance 'picorv32_core' of module 'picorv32' has 27 connections declared, but only 16 given [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:47]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_switch' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:369]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_hex' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:266]
+INFO: [Synth 8-6157] synthesizing module 'bin_to_one_hot' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:316]
+INFO: [Synth 8-6155] done synthesizing module 'bin_to_one_hot' (2#1) [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:316]
+INFO: [Synth 8-6157] synthesizing module 'bcd_to_7seg' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:334]
+INFO: [Synth 8-6155] done synthesizing module 'bcd_to_7seg' (3#1) [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:334]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_hex' (4#1) [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:266]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_dec' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_dec' (5#1) [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_switch' (6#1) [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:369]
+INFO: [Synth 8-6155] done synthesizing module 'system' (7#1) [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:3]
+WARNING: [Synth 8-7129] Port pcpi_wr in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[31] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[30] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[29] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[28] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[27] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[26] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[25] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[24] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[23] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[22] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[21] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[20] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[19] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[18] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[17] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[16] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[15] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[14] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[13] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[12] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[11] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[10] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[9] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[8] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[7] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[6] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[5] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[4] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[3] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[2] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[1] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_rd[0] in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_wait in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pcpi_ready in module picorv32 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port enable in module system is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2592.777 ; gain = 0.000 ; free physical = 314 ; free virtual = 21345
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2592.777 ; gain = 0.000 ; free physical = 1233 ; free virtual = 22264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2592.777 ; gain = 0.000 ; free physical = 1233 ; free virtual = 22264
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2592.777 ; gain = 0.000 ; free physical = 1239 ; free virtual = 22270
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/licit/laboratorio-6-jarvis/src/constraints/system.xdc]
+Finished Parsing XDC File [/home/licit/laboratorio-6-jarvis/src/constraints/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/licit/laboratorio-6-jarvis/src/constraints/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2624.703 ; gain = 0.000 ; free physical = 1058 ; free virtual = 22089
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2624.703 ; gain = 0.000 ; free physical = 1058 ; free virtual = 22089
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1221 ; free virtual = 22252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1221 ; free virtual = 22252
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1221 ; free virtual = 22252
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'out_byte32_reg' and it is trimmed from '32' to '8' bits. [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:121]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1213 ; free virtual = 22245
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               36 Bit    Registers := 1     
+	               32 Bit    Registers := 17    
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 84    
++---RAMs : 
+	             128K Bit	(4096 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 15    
+	   5 Input   32 Bit        Muxes := 5     
+	  10 Input   32 Bit        Muxes := 3     
+	   9 Input   32 Bit        Muxes := 4     
+	   6 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   16 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 12    
+	   9 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 1     
+	  17 Input    8 Bit        Muxes := 1     
+	  12 Input    8 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   9 Input    5 Bit        Muxes := 2     
+	   3 Input    4 Bit        Muxes := 2     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   6 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 34    
+	   2 Input    1 Bit        Muxes := 33    
+	   4 Input    1 Bit        Muxes := 5     
+	  10 Input    1 Bit        Muxes := 7     
+	   5 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1176 ; free virtual = 22215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|system      | memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++--------------+-------------+-----------+----------------------+--------------+
+|Module Name   | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++--------------+-------------+-----------+----------------------+--------------+
+|picorv32_core | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1057 ; free virtual = 22096
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|system      | memory_reg | 4 K x 32(READ_FIRST)   | W |   | 4 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++--------------+-------------+-----------+----------------------+--------------+
+|Module Name   | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++--------------+-------------+-----------+----------------------+--------------+
+|picorv32_core | cpuregs_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++--------------+-------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1054 ; free virtual = 22094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1054 ; free virtual = 22093
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1054 ; free virtual = 22093
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1054 ; free virtual = 22093
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   315|
+|3     |LUT1     |   125|
+|4     |LUT2     |   688|
+|5     |LUT3     |   207|
+|6     |LUT4     |   286|
+|7     |LUT5     |   284|
+|8     |LUT6     |   527|
+|9     |MUXF7    |     1|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |RAMB36E1 |     4|
+|16    |FDRE     |   583|
+|17    |FDSE     |    55|
+|18    |IBUF     |     4|
+|19    |OBUF     |    26|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2624.703 ; gain = 31.926 ; free physical = 1054 ; free virtual = 22093
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2624.703 ; gain = 0.000 ; free physical = 1106 ; free virtual = 22145
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2624.711 ; gain = 31.926 ; free physical = 1106 ; free virtual = 22145
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2624.711 ; gain = 0.000 ; free physical = 1204 ; free virtual = 22243
+INFO: [Netlist 29-17] Analyzing 334 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2624.711 ; gain = 0.000 ; free physical = 1143 ; free virtual = 22183
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: 867209b9
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:29 . Memory (MB): peak = 2624.711 ; gain = 32.023 ; free physical = 1228 ; free virtual = 22267
+INFO: [Common 17-1381] The checkpoint '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 21 13:11:06 2022...

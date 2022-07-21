@@ -1,0 +1,2344 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jul 21 08:08:22 2022
+# Process ID: 11230
+# Current directory: /home/licit/laboratorio-6-jarvis
+# Command line: vivado
+# Log file: /home/licit/laboratorio-6-jarvis/vivado.log
+# Journal file: /home/licit/laboratorio-6-jarvis/vivado.jou
+# Running On: debian, OS: Linux, CPU Frequency: 3629.336 MHz, CPU Physical cores: 4, Host memory: 16660 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/genesys-zu-3eg/B.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at /tools/Xilinx/Vivado/2021.2/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at /tools/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 08:10:02 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/runme.log
+[Thu Jul 21 08:10:02 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/system.dcp to /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 08:11:31 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/runme.log
+[Thu Jul 21 08:11:32 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 08:13:32 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/runme.log
+[Thu Jul 21 08:13:32 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7783.539 ; gain = 0.000 ; free physical = 9264 ; free virtual = 27648
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'system' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 7909.305 ; gain = 0.000 ; free physical = 8672 ; free virtual = 27046
+Restored from archive | CPU: 0.100000 secs | Memory: 2.338997 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 7909.305 ; gain = 0.000 ; free physical = 8672 ; free virtual = 27046
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7909.305 ; gain = 0.000 ; free physical = 8672 ; free virtual = 27046
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 8091.379 ; gain = 307.840 ; free physical = 8542 ; free virtual = 26918
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 08:16:22 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/runme.log
+[Thu Jul 21 08:16:22 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 08:18:52 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/runme.log
+[Thu Jul 21 08:18:52 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol irq_counter, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'irq_counter' on this module [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 8114.043 ; gain = 0.000 ; free physical = 8452 ; free virtual = 26854
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'system' is not ideal for floorplanning, since the cellview 'picorv32' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 8114.043 ; gain = 0.000 ; free physical = 8310 ; free virtual = 26713
+Restored from archive | CPU: 0.100000 secs | Memory: 2.287094 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 8114.043 ; gain = 0.000 ; free physical = 8310 ; free virtual = 26713
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'irq_counter' on this module [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol irq_counter, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'irq_counter' on this module [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'base_sel' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+яINFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 8177.777 ; gain = 0.000 ; free physical = 8299 ; free virtual = 26737
+run all
+яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяrun: Time (s): cpu = 00:00:45 ; elapsed = 00:03:24 . Memory (MB): peak = 8177.777 ; gain = 0.000 ; free physical = 3097 ; free virtual = 24758
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 119752 KB (Peak: 172924 KB), Simulation CPU Usage: 200060 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'base_sel' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Time resolution is 1 ps
+яclose_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'base_sel' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+яINFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 8177.777 ; gain = 0.000 ; free physical = 4461 ; free virtual = 25728
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'base_sel' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:62]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+яrun all
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 8177.777 ; gain = 0.000 ; free physical = 4456 ; free virtual = 25726
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 08:53:30 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/synth_1/runme.log
+[Thu Jul 21 08:53:30 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.runs/impl_1/runme.log
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119752 KB (Peak: 172924 KB), Simulation CPU Usage: 11550 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+яINFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8177.777 ; gain = 0.000 ; free physical = 4062 ; free virtual = 25403
+run all
+	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопррстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛММНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789::;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§ЁЁ©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя	
+
+ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ЂЃ‚ѓ„…†‡€‰Љ‹ЊЌЋЏђ‘’“”•–—™љ›њќћџ ЎўЈ¤Ґ¦§Ё©Є«¬­®Ї°±Ііґµ¶·ё№є»јЅѕїАБВГДЕЖЗrun: Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 8177.777 ; gain = 0.000 ; free physical = 4036 ; free virtual = 25394
+relaunch_sim
+INFO: xsimkernel Simulation Memory Usage: 119748 KB (Peak: 172920 KB), Simulation CPU Usage: 19460 ms
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+яrun all
+run: Time (s): cpu = 00:00:24 ; elapsed = 00:01:59 . Memory (MB): peak = 8185.062 ; gain = 0.000 ; free physical = 3769 ; free virtual = 25347
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119748 KB (Peak: 172920 KB), Simulation CPU Usage: 118260 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'base_sel' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:62]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/proyecto/proyecto.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+яINFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 8244.090 ; gain = 0.000 ; free physical = 3965 ; free virtual = 25280
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 10:59:42 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 10:59:42 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:02:55 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:02:55 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp to /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:05:22 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:05:22 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:08:38 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:08:38 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:13:07 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:13:07 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B07DA
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:37:07 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:37:07 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:38:40 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:38:40 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:39:53 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:39:53 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:47:52 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 11:53:11 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 11:53:12 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-311] analyzing module text_display
+WARNING: [VRFC 10-2096] empty statement in sequential block [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:623]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:27]
+INFO: [VRFC 10-2458] undeclared symbol base_sel, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:24]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.text_display
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 9994.547 ; gain = 47.836 ; free physical = 2155 ; free virtual = 23177
+run all
+яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяrun: Time (s): cpu = 00:00:10 ; elapsed = 00:00:43 . Memory (MB): peak = 9994.625 ; gain = 0.078 ; free physical = 2088 ; free virtual = 23183
+save_wave_config {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+set_property xsim.view /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119988 KB (Peak: 172976 KB), Simulation CPU Usage: 41840 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:24]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяrun: Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2790 ; free virtual = 23802
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119804 KB (Peak: 172976 KB), Simulation CPU Usage: 15000 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-311] analyzing module text_display
+WARNING: [VRFC 10-2096] empty statement in sequential block [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:623]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:68]
+INFO: [VRFC 10-2458] undeclared symbol base_sel, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.text_display
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2746 ; free virtual = 23741
+run all
+яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяrun: Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2703 ; free virtual = 23742
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119808 KB (Peak: 172980 KB), Simulation CPU Usage: 28530 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:10:22 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 12:10:22 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:42
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 27 2021-15:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B07DA
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:20:57 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 12:20:57 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:27:25 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 12:27:25 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:29:12 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 12:29:12 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:35:29 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 12:35:29 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:38:52 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 12:38:52 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:42:58 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2458] undeclared symbol an_out, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+INFO: [VRFC 10-2458] undeclared symbol c_out, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-311] analyzing module text_display
+WARNING: [VRFC 10-2096] empty statement in sequential block [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:619]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:68]
+INFO: [VRFC 10-2458] undeclared symbol base_sel, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'num_in' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:78]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'an_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'c_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.bin_to_one_hot
+Compiling module xil_defaultlib.bcd_to_7seg
+Compiling module xil_defaultlib.seven_segment_hex
+Compiling module xil_defaultlib.seven_segment_dec
+Compiling module xil_defaultlib.seven_segment_switch
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2956 ; free virtual = 23917
+run all
+яrun: Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2934 ; free virtual = 23926
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119856 KB (Peak: 173028 KB), Simulation CPU Usage: 19690 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:49:18 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 12:49:18 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:42
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 27 2021-15:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B07DA
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2458] undeclared symbol an_out, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+INFO: [VRFC 10-2458] undeclared symbol c_out, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-311] analyzing module text_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:68]
+INFO: [VRFC 10-2458] undeclared symbol base_sel, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'num_in' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:78]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'an_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'c_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.bin_to_one_hot
+Compiling module xil_defaultlib.bcd_to_7seg
+Compiling module xil_defaultlib.seven_segment_hex
+Compiling module xil_defaultlib.seven_segment_dec
+Compiling module xil_defaultlib.seven_segment_switch
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2765 ; free virtual = 23749
+run all
+яrun: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2741 ; free virtual = 23744
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119856 KB (Peak: 173028 KB), Simulation CPU Usage: 12910 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 12:58:33 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2458] undeclared symbol an_out, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+INFO: [VRFC 10-2458] undeclared symbol c_out, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-311] analyzing module text_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:68]
+INFO: [VRFC 10-2458] undeclared symbol base_sel, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'num_in' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:78]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'an_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'c_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.bin_to_one_hot
+Compiling module xil_defaultlib.bcd_to_7seg
+Compiling module xil_defaultlib.seven_segment_hex
+Compiling module xil_defaultlib.seven_segment_dec
+Compiling module xil_defaultlib.seven_segment_switch
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2853 ; free virtual = 23831
+run all
+яrun: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2785 ; free virtual = 23778
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119856 KB (Peak: 173028 KB), Simulation CPU Usage: 13150 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'num_in' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:78]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'an_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'c_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+яrun: Time (s): cpu = 00:00:24 ; elapsed = 00:01:25 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2565 ; free virtual = 23715
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119856 KB (Peak: 173028 KB), Simulation CPU Usage: 83840 ms
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'num_in' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:78]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'an_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'c_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+яrun: Time (s): cpu = 00:00:37 ; elapsed = 00:02:26 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2353 ; free virtual = 23640
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119856 KB (Peak: 173028 KB), Simulation CPU Usage: 145140 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'num_in' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:78]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'an_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:82]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'c_out' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:83]
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+run all
+яrun: Time (s): cpu = 00:00:13 ; elapsed = 00:00:38 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2513 ; free virtual = 23558
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.srcs/utils_1/imports/synth_1/system.dcp with file /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/system.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 13:09:12 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 13:09:12 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu Jul 21 13:10:23 2022] Launched synth_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/synth_1/runme.log
+[Thu Jul 21 13:10:23 2022] Launched impl_1...
+Run output will be captured here: /home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2021.2
+  **** Build date : Oct 19 2021 at 03:13:42
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2021.2.0
+  ****** Build date   : Sep 27 2021-15:44:20
+    **** Build number : 2021.2.1632779060
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A8B07DA
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.runs/impl_1/system.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 119856 KB (Peak: 173028 KB), Simulation CPU Usage: 36740 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'system_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/tools/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'system_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim/firmware.hex'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj system_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-311] analyzing module text_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:68]
+INFO: [VRFC 10-2458] undeclared symbol base_sel, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot system_tb_behav xil_defaultlib.system_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'num_in' [/home/licit/laboratorio-6-jarvis/src/verilog/system.v:78]
+WARNING: [VRFC 10-5021] port 'irq' is not connected on this instance [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.picorv32(LATCHED_IRQ=32'b0)
+Compiling module xil_defaultlib.bin_to_one_hot
+Compiling module xil_defaultlib.bcd_to_7seg
+Compiling module xil_defaultlib.seven_segment_hex
+Compiling module xil_defaultlib.seven_segment_dec
+Compiling module xil_defaultlib.seven_segment_switch
+Compiling module xil_defaultlib.system_default
+Compiling module xil_defaultlib.system_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot system_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/licit/laboratorio-6-jarvis/vivado/prject1/prject1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "system_tb_behav -key {Behavioral:sim_1:Functional:system_tb} -tclbatch {system_tb.tcl} -view {/home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/licit/laboratorio-6-jarvis/vivado/prject1/system_tb_behav.wcfg
+source system_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'system_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 9994.625 ; gain = 0.000 ; free physical = 2374 ; free virtual = 23397
+run all
+яяюАющю¤ю°ю™ю’ю‚юшюЂюАюАэАэАэАэАэАэАэАэАэАэАыАыАыАыАыАыАыАыАыАыАчАчАчАчАчАчАчАчАчАчАпАпАпАпАпАпАпАпАпАпАЯАЯАЯАЯАЯАЯАЯАЯАЯАЯАїАїАїАїАїАїАїАїАїАїААААААААААЂюАющю¤ю°ю™ю’ю‚юшюЂюАэАэАэАэАэАэАэАэАэАэАыАыАыАыАыАыАыАыАыАыАчАчАчАчАчАчАчАчАчАчАпАпАпАпАпАпАпАпАпАпАЯАЯАЯАЯАЯАЯАЯАЯАЯАЯАїАїАїАїАїАїАїАїАїАїААААААААААшюЂюАющю¤ю°ю™ю’ю‚юшюАэАэАэАэАэАэАэАэАэАэАыАыАыАыАыАыАыАыАыАыАчАчАчАчАчАчАчАчАчАчАпАпАпАпАпАпАпАпАпАпАпАЯАЯАЯАЯАЯАЯАЯАЯАЯАЯАїАїАїАїАїАїАїАїАїАїААААААААААшюЂюАющю¤ю°ю™ю’ю‚юшюАэАэАэАэАэАэАэАэАэАэАыАыАыАыАыАыАыАыАыАыАчАчАчАчАчАчАчАчАчАчАпАпАпАпАпАпАп

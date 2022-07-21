@@ -3,18 +3,22 @@
 module system (
 	input            clk,
 	input            resetn,
+	input enable,
 	output           trap,
-	input 		[3:0]	 irq, //input for interrupts
+	input 	irq, //input for interrupts
 	output reg [7:0] out_byte,
 	input 			 base_sel, //switch to change between decimal to hexadecimal
 	output reg       out_byte_en,
-	output reg [7:0] irq_counter, //interrupt counter
-	output     [7:0] an_out,
-	output     [7:0] c_out
+	//output reg [7:0] irq_counter, //interrupt counter
+	output     [7:0] output_anodo,
+	output     [7:0] output_catodo
 );
 	// set this to 0 for better timing but less performance/MHz
+	
+	reg [3:0] selector;
+	
 	parameter FAST_MEMORY = 1;
-
+    
 	// 4096 32bit words = 16kB memory
 	parameter MEM_SIZE = 4096;
 
@@ -58,19 +62,29 @@ module system (
 		.mem_la_wstrb(mem_la_wstrb),
 		.irq ({28'b0, irq, 3'b0})
 	);
+	
+	/*text_display t(
+	 	.clk 			(clk),
+	 	.text_selector 	(selector),
+		.enable			(enable),
+	 	.resetn 		(resetn),
+	 	.output_anodo 	(output_anodo),
+	 	.output_catodo	(output_catodo)
 
-
-	seven_segment_switch ssswitch_inst(
+    );*/
+    
+    
+  seven_segment_switch ssswitch_inst(
 		out_byte,
 		clk,
 		resetn,
 		base_sel,
-		an_out,
-		c_out
+		output_anodo,
+		output_catodo
 	);
-
-	always @(posedge clk) out_byte <= out_byte32[7:0];
-
+	
+   always @(posedge clk) out_byte <= out_byte32[7:0];
+    
 	reg [31:0] memory [0:MEM_SIZE-1];
 
 `ifdef SYNTHESIS
@@ -98,9 +112,14 @@ module system (
 				out_byte_en <= 1;
 				//out_byte <= mem_la_wdata;
 			end
-			if (mem_la_write && mem_la_addr == 32'h1000_0004) begin
-				out_byte <= out_byte +1; //adds one when it detects an interruption
+			/*if (mem_la_write && mem_la_addr == 32'h1000_0004) begin
+				out_byte <= mem_la_wdata; //adds one when it detects an interruption
 				out_byte_en <= 1; //enable out?byte signal
+			end*/
+			if (mem_la_write && mem_la_addr == 32'h1000_0010) begin 
+			    out_byte_en <= 1; //enable out?byte signal
+				out_byte32 <= mem_la_wdata; //adds one when it detects an interruption
+				
 			end
 		end
 		//case not taken in the presence of FAST_MEMORY
@@ -387,4 +406,439 @@ module seven_segment_switch(
                         c_out = c_out_hex;
                 end
         end
+endmodule
+
+
+module text_display
+(
+    input      clk,
+    input      resetn,
+    input      enable,
+    input      [3:0] text_selector,
+    output reg [7:0] output_anodo,
+	output reg [7:0] output_catodo
+);
+reg [20:0] counter;
+wire [2:0] refresh; 
+reg [3:0] numero_BCD;
+
+
+always @(posedge clk) begin 
+    if(!resetn)
+        counter <= 0;
+    else
+        counter <= counter + 1;
+end 
+
+assign refresh = counter[20:18];
+
+
+
+
+
+always @(posedge clk) begin 
+    if(resetn==0) counter <= 0;
+    else counter <= counter + 1;
+end 
+
+always @(*) begin 
+    if (enable) begin  
+        // Se pone start
+        output_anodo = 8'b11111011;
+        output_catodo= 8'b10001000;
+        if (text_selector == 0) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11111111;  // 
+            end 
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11111111;  // 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo= 8'b11111111;  //
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo = 8'b11010010; //palabra s   
+            end
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b10000111;  //palabra t     
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10001000;  //palabra a     
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b10101111; // palabra r 
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo= 8'b10000111;  //palabra t  
+            end
+        end
+        // Se pone select
+        if (text_selector == 1) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11111111;  //
+            end    
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11111111;  // 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo = 8'b11010010; //palabra s
+            end
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b10000110;  //palabra e   
+            end
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b11000111;  //palabra l   
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10000110; //palabra e
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b11000110; //palabra c
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo= 8'b10000111; //palabra t 
+            end
+
+        end
+        // Se pone paper
+        if (text_selector == 2) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11111111;  //
+            end
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11111111;  // 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo= 8'b11111111;  //
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b10001100;  //palabra p 
+            end
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b10001000; //palabra a  
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10001100; //palabra p
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b10000110; //palabra e
+            end
+            if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo=  8'b10101111;  //palabra r
+            end
+        end
+        //Se pone Scissors
+        if (text_selector == 3) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11010010;  //palabra s
+            end  
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11000110;  //palabra c 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo= 8'b11001111;  //palabra i
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b11010010;  //palabra s 
+            end   
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b11010010;  //palabra s 
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10100011; //palabra o
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo=  8'b10101111; //palabra r
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo= 8'b11010010;  //palabra s
+            end
+        end
+        // Se pone rock
+        if (text_selector == 4) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11111111;  //
+            end
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11111111;  // 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo= 8'b11111111;  //
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b11111111;  //
+            end
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo=  8'b10101111;//palabra r 
+            end   
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10100011; //palabra o
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b11000110; //palabra c
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo= 8'b10001010;//palabra k
+            end
+        end
+
+        // Se pone rival
+        if (text_selector == 5) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11111111;  //
+            end
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11111111;  // 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo= 8'b11111111;  //
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo = 8'b10101111; //palabra r   
+            end    
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b11001111;  //palabra i     
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b11010101;  //palabra v    
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b10001000;  //palabra a
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo=  8'b11000111; //palabra l 
+            end
+        end
+            // Se pone You  won
+        if (text_selector == 6) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b10010001;  //palabra y
+            end  
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b10100011;  //palabra o
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo =  8'b11011111;
+                output_catodo=  8'b11100011; //palabra u
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b11111111;  //
+            end     
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b1110111;
+                output_catodo= 8'b1111111;  //
+            end  
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10010101;  //palabra w
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b10100011;  //palabra o
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo= 8'b10101011;  //palabra n
+            end
+        end
+        // Se pone You  Lost
+        if (text_selector == 7) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b10010001;  //palabra y
+            end  
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b10100011;  //palabra o
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo =  8'b11011111;
+                output_catodo=  8'b11100011; //palabra u
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b11111111;  //
+            end     
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b11000111;   //palabra l 
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10100011; //palabra o
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo = 8'b11010010; //palabra s
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo=  8'b10000111;  //palabra t
+            end
+        end
+        // Se pone tie
+        if (text_selector == 8) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11111111;  //
+            end
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11111111;  // 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo= 8'b11111111;  //
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b11111111;  //
+            end
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b11111111;   //
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10000111;  //palabra t   
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b11001111;   //palabra i
+            end
+            else if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo= 8'b10000110;   //palabra e 
+            end
+
+
+        end
+        
+        // Se pone paper
+        if (text_selector == 2) begin
+            if (counter [20:18] == 7) begin
+                output_anodo = 8'b01111111;
+                output_catodo= 8'b11111111;  //
+            end
+            else if (counter [20:18] == 6) begin
+                output_anodo = 8'b10111111;
+                output_catodo= 8'b11111111;  // 
+            end  
+            else if (counter [20:18] == 5) begin
+                output_anodo = 8'b11011111;
+                output_catodo= 8'b11111111;  //
+            end  
+            else if (counter [20:18] == 4) begin
+                output_anodo = 8'b11101111;
+                output_catodo= 8'b10001100;  //palabra p 
+            end
+            else if (counter [20:18] == 3) begin
+                output_anodo = 8'b11110111;
+                output_catodo= 8'b10001000; //palabra a  
+            end
+            else if (counter [20:18] == 2) begin
+                output_anodo = 8'b11111011;
+                output_catodo= 8'b10001100; //palabra p
+            end
+            else if (counter [20:18] == 1) begin
+                output_anodo = 8'b11111101;
+                output_catodo= 8'b10000110; //palabra e
+            end
+            if (counter [20:18] == 0) begin
+                output_anodo = 8'b11111110;
+                output_catodo=  8'b10101111;  //palabra r
+            end
+        end
+        
+
+
+
+
+    end else begin
+        // Si no está en enable se apaga
+        if (counter [20:18] == 7) begin
+            output_anodo = 8'b01111111;
+            output_catodo= 8'b11111111;  //
+        end 
+        else if (counter [20:18] == 0) begin
+            output_anodo = 8'b11111110;
+            output_catodo= 8'b11111111; // 
+        end
+        else if (counter [20:18] == 1) begin
+            output_anodo = 8'b11111101;
+            output_catodo= 8'b11111111; //
+        end
+        else if (counter [20:18] == 2) begin
+            output_anodo = 8'b11111011;
+            output_catodo= 8'b11111111;  //  
+        end
+        else if (counter [20:18] == 3) begin
+            output_anodo = 8'b11110111;
+            output_catodo= 8'b11111111; //
+        end
+        else if (counter [20:18] == 4) begin
+            output_anodo = 8'b11101111;
+            output_catodo= 8'b11111111; //
+         end
+        else if (counter [20:18] == 5) begin
+            output_anodo = 8'b11011111;
+            output_catodo= 8'b11111111; //
+        end  
+        else if (counter [20:18] == 6) begin
+            output_anodo = 8'b10111111;
+            output_catodo= 8'b11111111;  //
+        end  
+    end
+end
 endmodule

@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/picorv32/picorv32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module picorv32
+INFO: [VRFC 10-311] analyzing module picorv32_regs
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_fast_mul
+INFO: [VRFC 10-311] analyzing module picorv32_pcpi_div
+INFO: [VRFC 10-311] analyzing module picorv32_axi
+INFO: [VRFC 10-311] analyzing module picorv32_axi_adapter
+INFO: [VRFC 10-311] analyzing module picorv32_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-311] analyzing module seven_segment_dec
+INFO: [VRFC 10-311] analyzing module seven_segment_hex
+INFO: [VRFC 10-311] analyzing module bin_to_one_hot
+INFO: [VRFC 10-311] analyzing module bcd_to_7seg
+INFO: [VRFC 10-311] analyzing module seven_segment_switch
+INFO: [VRFC 10-311] analyzing module text_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_tb
+INFO: [VRFC 10-2458] undeclared symbol enable, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:68]
+INFO: [VRFC 10-2458] undeclared symbol base_sel, assumed default net type wire [/home/licit/laboratorio-6-jarvis/src/verilog/system_tb.v:69]
