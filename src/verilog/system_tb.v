@@ -5,13 +5,54 @@ module system_tb;
 	always #5 clk = ~clk;
 
 	reg resetn = 0;
+	reg irq = 0;
 	initial begin
 		if ($test$plusargs("vcd")) begin
 			$dumpfile("system.vcd");
 			$dumpvars(0, system_tb);
 		end
-		repeat (100) @(posedge clk);
+		
+		repeat (1) @(posedge clk);
 		resetn <= 1;
+
+		repeat (100) @(posedge clk);
+		irq <= 0;
+
+		repeat (10) @(posedge clk);
+		irq <= 1;
+
+		repeat (10) @(posedge clk);
+		irq <= 0;
+
+		repeat (10) @(posedge clk);
+		irq <= 1;
+
+		repeat (100) @(posedge clk);
+		irq <= 0;
+
+		repeat (500) @(posedge clk);
+		irq <= 1;
+
+		repeat (500) @(posedge clk);
+		irq <= 0;
+
+		repeat (3000) @(posedge clk);
+		irq <= 1;
+
+		repeat (100) @(posedge clk);
+		irq <= 0;
+
+		repeat (100) @(posedge clk);
+		irq <= 1;
+		
+		repeat (200) @(posedge clk);
+		irq <= 0;
+
+		repeat (2000) @(posedge clk);
+		irq <= 1;
+
+		repeat (100) @(posedge clk);
+		irq <= 0;
 	end
 
 	wire trap;
@@ -19,11 +60,13 @@ module system_tb;
 	wire out_byte_en;
 
 	system uut (
-		.clk        (clk        ),
-		.resetn     (resetn     ),
-		.trap       (trap       ),
-		.out_byte   (out_byte   ),
-		.out_byte_en(out_byte_en)
+		.clk        	(clk        ),
+		.irq        	(irq        ),
+		.resetn     	(resetn     ),
+		.trap       	(trap       ),
+		.out_byte      (out_byte   ),
+		.out_byte_en   (out_byte_en),
+		.irq_counter   (irq_counter)
 	);
 
 	always @(posedge clk) begin

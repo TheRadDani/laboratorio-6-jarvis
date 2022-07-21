@@ -4,8 +4,10 @@ module system (
 	input            clk,
 	input            resetn,
 	output           trap,
+	input 			 irq, //input for interrupts
 	output reg [7:0] out_byte,
-	output reg       out_byte_en
+	output reg       out_byte_en,
+	output reg [7:0] irq_counter //interrupt counter
 );
 	// set this to 0 for better timing but less performance/MHz
 	parameter FAST_MEMORY = 1;
@@ -26,8 +28,14 @@ module system (
 	wire [31:0] mem_la_addr;
 	wire [31:0] mem_la_wdata;
 	wire [3:0] mem_la_wstrb;
-
-	picorv32 picorv32_core (
+	//Instance of the processor with interrupt signals
+	//and module parameters
+	picorv32  #(
+		.ENABLE_IRQ(1),
+		.ENABLE_IRQ_QREGS(0),
+		.LATCHED_IRQ(0)
+	)
+	picorv32_core (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
 		.trap        (trap        ),
@@ -42,7 +50,8 @@ module system (
 		.mem_la_write(mem_la_write),
 		.mem_la_addr (mem_la_addr ),
 		.mem_la_wdata(mem_la_wdata),
-		.mem_la_wstrb(mem_la_wstrb)
+		.mem_la_wstrb(mem_la_wstrb),
+		.irq ({28'b0, irq, 3'b0})
 	);
 
 	reg [31:0] memory [0:MEM_SIZE-1];
@@ -70,9 +79,14 @@ module system (
 			else
 			if (mem_la_write && mem_la_addr == 32'h1000_0000) begin
 				out_byte_en <= 1;
-				out_byte <= mem_la_wdata;
+				//out_byte <= mem_la_wdata;
+			end
+			if (mem_la_write && mem_la_addr == 32'h1000_0004) begin
+				out_byte <= out_byte +1; //adds one when it detects an interruption
+				out_byte_en <= 1; //enable out?byte signal
 			end
 		end
+		//case not taken in the presence of FAST_MEMORY
 	end else begin
 		always @(posedge clk) begin
 			m_read_en <= 0;
